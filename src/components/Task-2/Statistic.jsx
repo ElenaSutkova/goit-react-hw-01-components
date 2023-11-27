@@ -1,29 +1,18 @@
 import React from 'react';
 import style from '../Task-2/Statistic.module.css'
 
-const Statistics = ({ id, label, percentage }) => {
+
+const Statistics = ({ title, stats }) => {
     return (
         <section className={style.statistics}>
-            <h2 className={style.title}>Upload stats</h2>
-
+            {title && <h2 className={style.title}>{title}</h2>}
             <ul className={style.list}>
-                <li className={style.item} id={id}>
-                    <span className={style.label}>{label}</span>
-                    <span className={style.percentage}>{percentage}</span>
-                </li>
-                <li className={style.item} id={id}>
-                    <span className={style.label}>{label}</span>
-                    <span className={style.percentage}>{percentage}</span>
-                </li>
-                <li className={style.item} id={id}>
-                    <span className={style.label}>{label}</span>
-                    <span className={style.percentage}>{percentage}</span>
-                </li>
-                <li className={style.item} id={id}>
-                    <span className={style.label}>{label}</span>
-                    <span className={style.percentage}>{percentage}</span>
-                </li>
-
+                {stats.map(({ id, label, percentage }) => (
+                    <li key={id} className={style.item}>
+                        <span className={style.label}>{label}</span>
+                        <span className={style.percentage}>{percentage}%</span>
+                    </li>
+                ))}
             </ul>
         </section>
     )
