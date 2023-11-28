@@ -1,0 +1,36 @@
+.list{
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    width: 400px;
+    margin: auto;
+    margin-top: 40px;
+    justify-content: space-between;    
+}
+
+
+.status{
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+.online{
+    background-color: green;
+}
+
+.noOnline{
+    background-color: red;
+}
+
+
+
+.name{
+    display: flex;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.5;
+        letter-spacing: 0.32px;
+        color: #111;
+}
