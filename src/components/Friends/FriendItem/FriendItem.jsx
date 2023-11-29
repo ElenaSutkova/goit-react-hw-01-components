@@ -13,10 +13,6 @@ const FriendItem = ({ friend: { avatar, name, isOnline } }) =>
         <p className={friendItemStyle.name}>{name}</p>
 </li>
 
-FriendItem.propTypes = {
-    avatar: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    isOnline: PropTypes.bool.isRequired
-}
+
 
 export default FriendItem
