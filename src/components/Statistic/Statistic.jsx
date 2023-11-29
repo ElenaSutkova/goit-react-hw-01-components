@@ -1,5 +1,5 @@
 import React from 'react';
-import style from '../Task-2/Statistic.module.css'
+import style from '../Statistic/Statistic.module.css'
 
 
 const Statistics = ({ title, stats }) => {

@@ -1,15 +1,15 @@
 import React from 'react';
 
-import Profile from '../components/Task-1/Profile'
+import Profile from './Profile/Profile'
 import user from '../data/user.json'
 
-import Statistics from '../components/Task-2/Statistic'
+import Statistics from './Statistic/Statistic'
 import data from '../data/data.json'
 
-import Friends from '../components/Task-3/Friends';
+import Friends from './Friends/Friends';
 import friends from '../data/friends.json'
 
-import Transaction from '../components/Task-4/Transaction';
+import Transaction from './Transaction/Transaction';
 import transaction from '../data/transactions.json'
 
 

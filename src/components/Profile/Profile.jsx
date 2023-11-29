@@ -1,5 +1,5 @@
 import React from 'react'
-import css from '../Task-1/Profile.module.css'
+import css from '../Profile/Profile.module.css'
 
 const Profile = ({ username, tag, location, avatar, stats }) => {
     const { followers, views, likes } = stats;
